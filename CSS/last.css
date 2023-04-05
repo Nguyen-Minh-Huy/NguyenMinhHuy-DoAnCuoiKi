@@ -1,0 +1,10 @@
+.last {
+  text-align: center;
+  padding: 17px;
+  background: #757575;
+}
+.last i {
+  color: #000;
+  font-size: 15px;
+  letter-spacing: 2px;
+}

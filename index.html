@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>3 Chàng Trai</title>
+    <link rel="stylesheet" href="./CSS/header.css" />
+    <link rel="stylesheet" href="./CSS/content.css" />
+    <link rel="stylesheet" href="./CSS/widget.css" />
+    <link rel="stylesheet" href="./CSS/contact.css" />
+    <link rel="stylesheet" href="./CSS/last.css" />
+    <link rel="stylesheet" href="./CSS/cart.css" />
+  </head>
+  <body>
+    <div id="main">
+      <!-- Begin Header -->
+      <section id="header">
+        <div class="logo-menu-icons">
+          <img src="./IMG/LOGO/logo.png" alt="" />
+        </div>
+        <ul id="nav" class="logo-menu-icons">
+          <li><a class="active" href="">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav_icons logo-menu-icons">
+          <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+          <a href="cart.html" class="shopping_cart">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <span class="count_shopping" id="count">0</span></a
+          >
+        </div>
+      </section>
+
+      <div style="padding: 0px 8%">
+        <div class="doitac">
+          <div class="doitac-container">
+            <a href=""><img src="./IMG/LOGO/doitac/adidas.png" alt="" /></a>
+            <a href=""><img src="./IMG/LOGO/doitac/nike.png" alt="" /></a>
+            <a href=""><img src="./IMG/LOGO/doitac/puma.png" alt="" /></a>
+            <a href=""><img src="./IMG/LOGO/doitac/under.png" alt="" /></a>
+            <a href=""><img src="./IMG/LOGO/doitac/fila.png " alt="" /></a>
+            <a href=""><img src="./IMG/LOGO/doitac/vans.png" alt="" /></a>
+            <a href=""><img src="./IMG/LOGO/doitac/balance.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div id="showCart">
+        <section class="cart-content">
+          <div class="basket">
+            <div class="basket-labels">
+              <ul>
+                <li class="item item-heading">product</li>
+                <li class="price">Price</li>
+                <li class="quantity">Qty</li>
+                <li class="subtotal">Total</li>
+              </ul>
+            </div>
+            <div id="myCart"></div>
+          </div>
+          <aside id="AllTotal"></aside>
+        </section>
+      </div>
+
+      <!-- End Header  -->
+      <section class="shop" id="shop">
+        <div class="shop-container">
+          <div class="box">
+            <div class="img"><img src="img/Giay/h1.jpg" /></div>
+            <h4>Adidas Supernova Black-White</h4>
+            <h5>99</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h2.jpg" /></div>
+            <h4>Adidas Superstar Shoes</h4>
+            <h5>110</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h3.jpg" /></div>
+            <h4>Adidas Grand Court White Gum</h4>
+            <h5>80</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+          <div class="box">
+            <div class="img"><img src="img/Giay/h4.jpg" /></div>
+            <h4>Nike Air Max Genome White</h4>
+            <h5>270</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+          <div class="box">
+            <div class="img"><img src="img/Giay/h5.jpg" /></div>
+            <h4>Nike Air Jordan 1 High Blue</h4>
+            <h5>500</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+          <div class="box">
+            <div class="img"><img src="img/Giay/h6.jpg" /></div>
+            <h4>Nike Air Force 1</h4>
+            <h5>160</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h7.jpg" /></div>
+            <h4>Puma Skye Clean White Black</h4>
+            <h5>99</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h8.jpg" /></div>
+            <h4>Puma Anzarun Lite Black/White</h4>
+            <h5>90</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h9.jpg" /></div>
+            <h4>Puma Skye Clean 'Peach Skin'</h4>
+            <h5>100</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h10.jpg" /></div>
+            <h4>Converse Bajo Negro Zapatillasr</h4>
+            <h5>99</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h11.jpg" /></div>
+            <h4>Converse Mule Recycled Canvas</h4>
+            <h5>110</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h12.jpg" /></div>
+            <h4>Converse CDG Play X</h4>
+            <h5>100</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h13.jpg" /></div>
+            <h4>Fila Oakment White/Grey</h4>
+            <h5>210</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h14.jpg" /></div>
+            <h4>Fila Unisex Scanline Mule</h4>
+            <h5>80</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h15.jpg" /></div>
+            <h4>Fila Ray Prism Shiny Pink</h4>
+            <h5>110</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h16.jpg" /></div>
+            <h4>Vans Old Skool Bee Check</h4>
+            <h5>99</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h17.jpg" /></div>
+            <h4>Vans Old Skool Style Classic</h4>
+            <h5>90</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h18.jpg" /></div>
+            <h4>Vans Ward Black/White</h4>
+            <h5>80</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h19.jpg" /></div>
+            <h4>New Balance PC Beige Navy</h4>
+            <h5>130</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h20.jpg" /></div>
+            <h4>New Balance 550 White Green</h4>
+            <h5>350</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <div class="img"><img src="img/Giay/h21.jpg" /></div>
+            <h4>New Balance PC Beige Green</h4>
+            <h5>120</h5>
+            <div style="text-align: center">
+              <input
+                type="number"
+                value="1"
+                min="1"
+                style="text-align: center"
+              />
+            </div>
+
+            <button class="cart" type="button" onclick="addToCart(this)">
+              <i><i class="fa fa-cart-plus"></i></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="widget_box_item" style="background-color: #fff">
+        <div class="container">
+          <div class="item item0">
+            <div>
+              <i class="fa fa-truck" aria-hidden="true"></i>
+            </div>
+            <div class="title">
+              <h3>FAST DELIVERY</h3>
+              <p class="description">Fast delivery in 2-3 days</p>
+            </div>
+          </div>
+          <div class="item item1">
+            <div>
+              <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            </div>
+            <div class="title">
+              <h3>COMMITMENT TO QUALITY</h3>
+              <p class="description">
+                Company 100%, Fafe fake company 10 times.
+              </p>
+            </div>
+          </div>
+          <div class="item item2">
+            <div>
+              <i class="fa fa-commenting" aria-hidden="true"></i>
+            </div>
+            <div class="title">
+              <h3>SUPPORT SHOPPING</h3>
+              <p class="description">
+                Dedicated advice, support to exchange goods
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="contact" id="contact">
+        <div class="main-contact">
+          <div class="contact-container">
+            <div class="contact-content">
+              <li><a href="#shop">Home</a></li>
+              <li><a href="#about">Shop</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <div class="contact-social">
+                <a href="#" style="color: #3b5998"
+                  ><span class="fa fa-facebook-square"></span
+                ></a>
+                <a href="#" style="color: #1da1f2"
+                  ><span class="fa fa-twitter"></span
+                ></a>
+                <a href="#" style="color: #d6249f"
+                  ><span class="fa fa-instagram"></span
+                ></a>
+                <a href="#" style="color: #ff0000"
+                  ><span class="fa fa-youtube"></span
+                ></a>
+                <a href="#" style="color: #bd081c"
+                  ><span class="fa fa-pinterest"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <tbody id="myCart"></tbody>
+
+          <div class="contact-container" style="text-align: center">
+            <div class="contact-content">
+              <li><a href="#">Shipping & Returns</a></li>
+              <li><a href="#">Store Policy</a></li>
+              <li><a href="#">Payment Methods</a></li>
+              <div class="contact-payment">
+                <a
+                  href="https://www.mastercard.com.vn/vi-vn.html"
+                  class="footer-mastercard"
+                  style="color: #fff"
+                  ><span class="fa fa-cc-mastercard"></span
+                ></a>
+                <a
+                  href="https://www.paypal.com"
+                  class="footer-paypal"
+                  style="color: #fff"
+                  ><span class="fa fa-cc-paypal"></span
+                ></a>
+                <a
+                  href="https://www.discover.com/"
+                  class="footer-discover"
+                  style="color: #fff"
+                  ><span class="fa fa-cc-discover"></span
+                ></a>
+                <a
+                  href="https://www.americanexpress.com/"
+                  class="footer-amex"
+                  style="color: #fff"
+                  ><span class="fa fa-cc-amex"></span
+                ></a>
+                <a
+                  href="https://stripe.com/"
+                  class="footer-stripe"
+                  style="color: #fff"
+                  ><span class="fa fa-cc-stripe"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-container" style="text-align: right">
+            <div class="contact-content">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Tel: 123-456-7890</a></li>
+            </div>
+          </div>
+        </div>
+
+        <div class="action">
+          <form>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <input type="submit" name="submit" value="Submit" required />
+          </form>
+        </div>
+      </section>
+      <div class="last">
+        <i>Copyright 2022 by </i>
+        <a href="index.html"><i>HKAT STORE</i></a>
+      </div>
+      <button class="scroll-top" onclick="scrollToTop()">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </button>
+      <style>
+        .scroll-top {
+          position: fixed;
+          right: 20px;
+          bottom: 20px;
+          font-size: 30px;
+          width: 40px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      </style>
+
+      <script src="./JS/index.js"></script>
+    </div>
+  </body>
+</html>

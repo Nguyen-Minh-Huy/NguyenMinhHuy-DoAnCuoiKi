@@ -1,0 +1,87 @@
+section {
+  padding: 50px 8%;
+}
+.contact {
+  background: #121212;
+}
+
+.contact-container {
+  width: 33.33333333333%;
+}
+.main-contact {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.contact-content li {
+  margin-bottom: 15px;
+}
+.contact-content li a {
+  display: block;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+.contact-content li a:hover {
+  transform: translateX(-10px);
+}
+.action form {
+  text-align: center;
+}
+.action form input[type="email"] {
+  width: 50%;
+  max-width: 100%;
+  padding: 12px 15px;
+  background: #515151;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin: 0px 10px 20px 0px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.action form input[type="submit"] {
+  padding: 10px 35px;
+  background: #fff;
+  color: #000;
+  border: none;
+  outline: none;
+  margin: 0px 10px 20px 0px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.action form input[type="submit"]:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+
+.contact-social,
+.contact-payment {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.contact-payment a {
+  padding: 0 7px;
+}
+
+.contact-social a {
+  padding: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.contact-social a span {
+  width: 22.4px;
+  height: 38px;
+  text-align: center;
+}
+
+.contact-social a:hover {
+  background-color: #fff;
+}
