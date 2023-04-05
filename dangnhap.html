@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <title>Đăng nhập</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: "Helvetica Neue", sans-serif;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: #f7f7f7;
+      }
+
+      .form-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      input[type="submit"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ff9900;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #f47700;
+      }
+
+      .register {
+        margin-top: 20px;
+        text-align: center;
+        color: #333;
+      }
+
+      .register p {
+        margin-bottom: 5px;
+      }
+
+      .register a {
+        color: #ff9900;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .register a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Đăng nhập</h1>
+      <form action="login.php" method="POST">
+        <label for="username">Tên đăng nhập:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" required />
+
+        <div class="form-actions">
+          <a href="forgot_password.php">Quên mật khẩu</a>
+          <input type="submit" value="Đăng nhập" />
+        </div>
+      </form>
+
+      <div class="register">
+        <p>Bạn chưa có tài khoản?</p>
+        <a href="dangki.html">Đăng kí ngay</a>
+      </div>
+    </div>
+  </body>
+</html>
